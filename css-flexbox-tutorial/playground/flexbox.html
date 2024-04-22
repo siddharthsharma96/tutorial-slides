@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .flex-container {
+            margin: 40px;
+            padding: 20px;
+            display: flex;
+            border: 4px dashed gray;
+
+            /* height: 600px; */
+
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap; */
+
+            /* flex-flow: row wrap; */
+            /* justify-content: space-between; */
+
+            /* align-items: center; */
+            /* align-content: space-between; */
+        }
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid red;
+
+            flex-grow: 1;
+        }
+        .flex-item.a {
+            /* flex-grow: 4;
+            flex-shrink: 3; */
+
+            flex: 4 3 auto;
+            order: 2;
+
+            /* align-self: baseline; */
+        }
+        .b {
+            order: 1;
+        }
+        .c {
+            order: 4;
+        }
+        .d {
+            order: 3;
+        }
+
+        @media (max-width: 678px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+
+        /* Extra Small Devices */
+        @media (max-width: 576px) {
+
+        }
+
+        /* Small Devices */
+        @media (min-width: 576px) {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item a">A</div>
+        <div class="flex-item b">B</div>
+        <div class="flex-item c">C</div>
+        <div class="flex-item d">D</div>
+        <div class="flex-item"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        input, select {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="text" title="Enter your name" placeholder="Enter name.." required>
+        <input type="email" required placeholder="Enter your email..">
+        <input type="password" placeholder="Enter Password.." required>
+        <input type="text" placeholder="Readonly Area" readonly>
+        <input type="range">
+        <select name="select" id="select">
+            <option value="">Select Options</option>
+            <option value="1">Opt 1</option>
+            <option value="2">Opt 2</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

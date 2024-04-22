@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="playground.css">
+    <style>
+        div p {
+            color: red;
+            background-color: yellow;
+        }
+        div > p {
+            color: yellow;
+            background-color: red;
+        }
+        div + div {
+            padding: 20px;
+            background-color: green;
+        }
+        
+        section[data-show="false"] {
+            background-color: yellow;
+            color: teal;
+        }
+
+        div a {
+            background-color: yellow;
+            padding: 10px 20px;
+            color: black;
+            display: inline-block;
+            border: 1px solid red;
+        }
+
+        div a:focus {
+            background-color: salmon;
+        }
+
+        div a:hover {
+            background-color: white;
+        }
+
+        div a:active {
+            background-color: blue;
+        }
+
+        div a::before {
+            content: "My Pseudo Element";
+        }
+
+        div a::after {
+            content: " After";
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit sed nemo suscipit fugit? Repellendus cum est sed, nulla expedita temporibus!</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ab. Architecto deleniti tempora, magnam vitae enim in laboriosam similique ipsa.</p>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi et nam id provident ipsam reprehenderit quisquam assumenda nihil adipisci.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab, architecto tempora nulla officia sit nemo animi veritatis eius ducimus!</p>
+    </div>
+
+    <hr>
+    <section data-show="true">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus sunt consectetur eligendi, eaque numquam, natus nesciunt itaque laborum minima vero aliquam vel! Illum, ea. Obcaecati, iusto deleniti laudantium accusamus repellat impedit, nemo officiis perspiciatis eaque, quasi alias deserunt ad! Ducimus.
+    </section>
+
+    <hr>
+    <div>
+        <a href="#">My Link</a>
+    </div>
+</body>
+
+</html>
